@@ -12,4 +12,8 @@ class Player
   def advance(positions)
     self.position = (position + positions) % 40
   end
+
+  def play_turn
+    self.rounds += 1
+  end
 end

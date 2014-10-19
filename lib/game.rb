@@ -17,7 +17,7 @@ class Game
   def play_turn
     self.rounds += 1
     players.each do |player|
-      player.rounds += 1
+      player.play_turn
     end
   end
 end
